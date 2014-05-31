@@ -12,12 +12,12 @@
 		78E338D6193A2D1C00E97E28 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E338D3193A2D1C00E97E28 /* main.m */; };
 		78E338DB193A2D6D00E97E28 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78E338DA193A2D6D00E97E28 /* WebKit.framework */; };
 		78E338DF193A2DA900E97E28 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78E338DE193A2DA900E97E28 /* MainMenu.xib */; };
-		78E338E6193A2DDD00E97E28 /* PTHelpManual.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78E338E1193A2DDD00E97E28 /* PTHelpManual.xib */; };
-		78E338E7193A2DDD00E97E28 /* PTHelpManualWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E338E5193A2DDD00E97E28 /* PTHelpManualWindowController.m */; };
 		78E338E9193A2E7400E97E28 /* Fission.manualFolder in Resources */ = {isa = PBXBuildFile; fileRef = 78E338E8193A2E7400E97E28 /* Fission.manualFolder */; };
-		78E338ED193A2EE600E97E28 /* PTIconPrint.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 78E338EA193A2EE600E97E28 /* PTIconPrint.tiff */; };
-		78E338EE193A2EE600E97E28 /* PTIconTextBigger.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 78E338EB193A2EE600E97E28 /* PTIconTextBigger.tiff */; };
-		78E338EF193A2EE600E97E28 /* PTIconTextSmaller.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 78E338EC193A2EE600E97E28 /* PTIconTextSmaller.tiff */; };
+		78E33907193A309B00E97E28 /* PTHelpManual.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78E338FF193A309B00E97E28 /* PTHelpManual.xib */; };
+		78E33908193A309B00E97E28 /* PTIconPrint.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 78E33901193A309B00E97E28 /* PTIconPrint.tiff */; };
+		78E33909193A309B00E97E28 /* PTIconTextBigger.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 78E33902193A309B00E97E28 /* PTIconTextBigger.tiff */; };
+		78E3390A193A309B00E97E28 /* PTIconTextSmaller.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 78E33903193A309B00E97E28 /* PTIconTextSmaller.tiff */; };
+		78E3390B193A309B00E97E28 /* PTHelpManualWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E33906193A309B00E97E28 /* PTHelpManualWindowController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,13 +32,13 @@
 		78E338D3193A2D1C00E97E28 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = SOURCE_ROOT; };
 		78E338DA193A2D6D00E97E28 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		78E338DE193A2DA900E97E28 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = SOURCE_ROOT; };
-		78E338E2193A2DDD00E97E28 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/PTHelpManual.xib; sourceTree = "<group>"; };
-		78E338E4193A2DDD00E97E28 /* PTHelpManualWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTHelpManualWindowController.h; sourceTree = "<group>"; };
-		78E338E5193A2DDD00E97E28 /* PTHelpManualWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTHelpManualWindowController.m; sourceTree = "<group>"; };
 		78E338E8193A2E7400E97E28 /* Fission.manualFolder */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Fission.manualFolder; sourceTree = SOURCE_ROOT; };
-		78E338EA193A2EE600E97E28 /* PTIconPrint.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = PTIconPrint.tiff; sourceTree = "<group>"; };
-		78E338EB193A2EE600E97E28 /* PTIconTextBigger.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = PTIconTextBigger.tiff; sourceTree = "<group>"; };
-		78E338EC193A2EE600E97E28 /* PTIconTextSmaller.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = PTIconTextSmaller.tiff; sourceTree = "<group>"; };
+		78E33900193A309B00E97E28 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/PTHelpManual.xib; sourceTree = "<group>"; };
+		78E33901193A309B00E97E28 /* PTIconPrint.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = PTIconPrint.tiff; sourceTree = "<group>"; };
+		78E33902193A309B00E97E28 /* PTIconTextBigger.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = PTIconTextBigger.tiff; sourceTree = "<group>"; };
+		78E33903193A309B00E97E28 /* PTIconTextSmaller.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = PTIconTextSmaller.tiff; sourceTree = "<group>"; };
+		78E33905193A309B00E97E28 /* PTHelpManualWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTHelpManualWindowController.h; sourceTree = "<group>"; };
+		78E33906193A309B00E97E28 /* PTHelpManualWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTHelpManualWindowController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +58,8 @@
 			isa = PBXGroup;
 			children = (
 				78E33891193A2BEA00E97E28 /* HelpManualTest */,
+				78E33904193A309B00E97E28 /* src */,
+				78E338FE193A309B00E97E28 /* res */,
 				78E3388A193A2BEA00E97E28 /* Frameworks */,
 				78E33889193A2BEA00E97E28 /* Products */,
 			);
@@ -100,41 +102,30 @@
 				78E338DE193A2DA900E97E28 /* MainMenu.xib */,
 				78E338D2193A2D1C00E97E28 /* HelpManualTest-Info.plist */,
 				78E338E8193A2E7400E97E28 /* Fission.manualFolder */,
-				78E338C7193A2C0900E97E28 /* HelpManual */,
 			);
 			path = HelpManualTest;
 			sourceTree = "<group>";
 		};
-		78E338C7193A2C0900E97E28 /* HelpManual */ = {
+		78E338FE193A309B00E97E28 /* res */ = {
 			isa = PBXGroup;
 			children = (
-				78E338E3193A2DDD00E97E28 /* src */,
-				78E338E0193A2DDD00E97E28 /* res */,
-			);
-			name = HelpManual;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		78E338E0193A2DDD00E97E28 /* res */ = {
-			isa = PBXGroup;
-			children = (
-				78E338E1193A2DDD00E97E28 /* PTHelpManual.xib */,
-				78E338EA193A2EE600E97E28 /* PTIconPrint.tiff */,
-				78E338EB193A2EE600E97E28 /* PTIconTextBigger.tiff */,
-				78E338EC193A2EE600E97E28 /* PTIconTextSmaller.tiff */,
+				78E338FF193A309B00E97E28 /* PTHelpManual.xib */,
+				78E33901193A309B00E97E28 /* PTIconPrint.tiff */,
+				78E33902193A309B00E97E28 /* PTIconTextBigger.tiff */,
+				78E33903193A309B00E97E28 /* PTIconTextSmaller.tiff */,
 			);
 			name = res;
-			path = ../HelpManualWindow/res;
+			path = ../res;
 			sourceTree = "<group>";
 		};
-		78E338E3193A2DDD00E97E28 /* src */ = {
+		78E33904193A309B00E97E28 /* src */ = {
 			isa = PBXGroup;
 			children = (
-				78E338E4193A2DDD00E97E28 /* PTHelpManualWindowController.h */,
-				78E338E5193A2DDD00E97E28 /* PTHelpManualWindowController.m */,
+				78E33905193A309B00E97E28 /* PTHelpManualWindowController.h */,
+				78E33906193A309B00E97E28 /* PTHelpManualWindowController.m */,
 			);
 			name = src;
-			path = ../HelpManualWindow/src;
+			path = ../src;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,12 +181,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78E33907193A309B00E97E28 /* PTHelpManual.xib in Resources */,
+				78E3390A193A309B00E97E28 /* PTIconTextSmaller.tiff in Resources */,
+				78E33908193A309B00E97E28 /* PTIconPrint.tiff in Resources */,
 				78E338E9193A2E7400E97E28 /* Fission.manualFolder in Resources */,
-				78E338EF193A2EE600E97E28 /* PTIconTextSmaller.tiff in Resources */,
-				78E338ED193A2EE600E97E28 /* PTIconPrint.tiff in Resources */,
-				78E338E6193A2DDD00E97E28 /* PTHelpManual.xib in Resources */,
 				78E338DF193A2DA900E97E28 /* MainMenu.xib in Resources */,
-				78E338EE193A2EE600E97E28 /* PTIconTextBigger.tiff in Resources */,
+				78E33909193A309B00E97E28 /* PTIconTextBigger.tiff in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,7 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78E338E7193A2DDD00E97E28 /* PTHelpManualWindowController.m in Sources */,
+				78E3390B193A309B00E97E28 /* PTHelpManualWindowController.m in Sources */,
 				78E338D4193A2D1C00E97E28 /* AppDelegate.m in Sources */,
 				78E338D6193A2D1C00E97E28 /* main.m in Sources */,
 			);
@@ -215,10 +206,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		78E338E1193A2DDD00E97E28 /* PTHelpManual.xib */ = {
+		78E338FF193A309B00E97E28 /* PTHelpManual.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				78E338E2193A2DDD00E97E28 /* English */,
+				78E33900193A309B00E97E28 /* English */,
 			);
 			name = PTHelpManual.xib;
 			sourceTree = "<group>";

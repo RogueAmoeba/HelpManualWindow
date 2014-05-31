@@ -419,7 +419,14 @@
 	if ( self != nil )
 	{
 		if ( bundle == nil )
+		{
+			#if __PROTEIN__
+			bundle = [[ProteinOwner sharedOwner] mainBundle];
+			#else
 			bundle = [NSBundle mainBundle];
+			#endif
+		}
+		
 		NSArray *helpManuals = [bundle pathsForResourcesOfType: @"manualFolder" inDirectory: nil];
 		if ( helpManuals != nil && [helpManuals count] > 0 )
 		{

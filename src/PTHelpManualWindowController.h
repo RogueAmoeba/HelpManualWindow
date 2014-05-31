@@ -6,6 +6,7 @@
 //  Copyright 2011 Rogue Amoeba Software, LLC. All rights reserved.
 //
 
+#import <Cocoa/Cocoa.h>
 #import <WebKit/WebKit.h>
 
 

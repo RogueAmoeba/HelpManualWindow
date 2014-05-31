@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>01131FDE-DAC3-4BB9-8688-09A589292DDA</string>
+	<key>IDESourceControlProjectName</key>
+	<string>HelpManualTest</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C5F47C49-91B7-4B34-9332-DBA25021F522</key>
+		<string>https://github.com/RogueAmoeba/HelpManualWindow.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>test/HelpManualTest/HelpManualTest.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C5F47C49-91B7-4B34-9332-DBA25021F522</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/RogueAmoeba/HelpManualWindow.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C5F47C49-91B7-4B34-9332-DBA25021F522</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C5F47C49-91B7-4B34-9332-DBA25021F522</string>
+			<key>IDESourceControlWCCName</key>
+			<string>HelpManualTest</string>
+		</dict>
+	</array>
+</dict>
+</plist>

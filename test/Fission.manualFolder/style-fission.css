@@ -1,0 +1,131 @@
+@media screen
+{
+	#welcome {
+		font-family: Helvetica, Arial;
+	}
+
+	#ww h2 {
+		font-family: Helvetica, Arial;
+	}
+}
+
+@media print
+{
+	#welcome {
+		font-family: Georgia;
+	}
+	#ww h2 {
+		font-family: Georgia;
+	}
+}
+
+@media screen, print
+{
+	#ww {
+		padding: 0 !important;
+	}
+	
+	#welcome {
+		float: inherit;
+		clear: none;
+		width: 600px;
+		margin-top: 50px;
+		font-size: 10pt;
+		color: #515151;
+	}
+	
+	#ww h1 {
+		padding-top: 20px;
+		font-size: 14pt;
+		line-height: 14pt;
+		color: #343434;
+		margin: 0;
+	}
+	
+	#ww h2 {
+		display: block;
+		text-align: center;
+		font-size: 9pt;
+		color: #515151;
+		font-weight: bold;
+	}
+	
+	#welcome img {
+		
+		float: left;
+		clear: none;
+		width: 290px;				
+	}	
+	
+	#help-header img {
+		
+		float: left;
+		clear: none;
+		width: 363px;				
+	}		
+	
+	#welcome p {
+		float: left;
+		clear: none;
+		width: 235px;
+		margin: 0;
+		
+	}
+
+	#wwheadertext {
+		float: left;
+		clear: both;
+		width: 600px;
+		margin: 10px 8px 10px 12px;				
+	}
+
+	#wwheadertext p {
+		font-weight: bold;
+		font-size: 11pt;
+		width: 555px;				
+	}
+	
+	#wwfootertext {
+		clear: both;
+		width: 600px;
+		margin: 20px 8px 30px 12px;				
+	}	
+	
+	#wwfootertext p {
+		float: left;		
+		font-weight: bold;
+		font-size: 10pt;
+		width: 555px;		
+	}	
+	
+	.step {
+		float: left;
+		clear: both;
+		width: 600px;
+		margin-bottom: 50px;
+	}
+
+	.step:last-child {
+		margin-bottom: 0px;
+	}
+	
+	.column1, .column2 {
+		float: left;
+		clear: none;
+	}
+
+	.column1 {
+		width: 240px;
+		margin-left: 12px;		
+		margin-right: 8px;
+		margin-top: 10px;	
+	}
+
+	.column2 {
+		width: 280px;
+	}
+	
+	.column2 img {
+		float: right!important;
+	}
+}	

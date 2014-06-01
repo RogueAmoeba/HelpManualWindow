@@ -3,7 +3,8 @@
 //  Protein
 //
 //  Created by Quentin Carnicelli on 10/5/11.
-//  Copyright 2011 Rogue Amoeba Software, LLC. All rights reserved.
+//			   Jeff Johnson - 11/17/11
+//  Copyright 2011-2014 Rogue Amoeba Software, LLC. All rights reserved.
 //
 
 #import <Cocoa/Cocoa.h>

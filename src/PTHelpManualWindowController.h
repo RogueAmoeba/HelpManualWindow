@@ -7,7 +7,6 @@
 //  Copyright 2011-2014 Rogue Amoeba Software, LLC. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
 #import <WebKit/WebKit.h>
 
 
@@ -39,6 +38,11 @@
 
 - (void)showPageNamed: (NSString*)name;
 
+@end
+
+
+@interface PTHelpManualWindowController ( PTHelpManualTester )
+- (id) initWithHelpManualFolderPath:(NSString *)path;
 @end
 
 

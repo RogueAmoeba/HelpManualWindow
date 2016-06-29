@@ -10,12 +10,12 @@
 #import "PTHelpManualWindowController.h"
 
 #if __PROTEIN__
-#import "PTAppController.h"
+#import "PTAppKitAdditions.h"
 #import "PTErrorAdditions.h"
 #else
 #define PTLogWarning NSLog
+BOOL PTOperatingSystemSupports1010(){ return floor(NSAppKitVersionNumber) > 1265 /*NSAppKitVersionNumber10_9*/; }
 #endif
-
 
 @interface PTHelpManualSearchResult : NSObject
 {
@@ -105,11 +105,7 @@
 {
 	[super windowDidLoad];
 	
-	#if __PROTEIN__
-	NSString* appName = [[PTAppController sharedController] productName];
-	#else
 	NSString* appName = [[NSProcessInfo processInfo] processName];
-	#endif
 	
 	NSString *title = [NSString stringWithFormat: @"%@ Manual", appName];
 	[[self window] setTitle: title];
@@ -118,7 +114,23 @@
 	WebPreferences *printPreferences = [_printWebView preferences];
 	[printPreferences setShouldPrintBackgrounds: YES];
 	[printPreferences setUsesPageCache: NO];
-	[printPreferences setPrivateBrowsingEnabled: YES];
+	
+	// Don't enable private browsing,
+	// because there is a WebKit bug on Mac OS X 10.9
+	// that causes a crash in setMainFrameURL:
+	// if the app itself is linked to WebKit.
+	// This crash wasn't apparent immediately,
+	// because it only occurs if the app is linked to WebKit,
+	// not just Protein.
+	//[printPreferences setPrivateBrowsingEnabled: YES];
+	
+	if ( PTOperatingSystemSupports1010() )
+	{
+		// Workaround for https://bugs.webkit.org/show_bug.cgi?id=137851
+		// REGRESSION (Yosemite): Embedded WebView flickers position: fixed elements during rapid scrolling events
+		// This workaround doesn't totally fix all flickering, but it makes things a lot better.
+		[_webView setWantsLayer: YES];
+	}
 }
 
 #pragma mark WebFrameLoadDelegate
@@ -237,6 +249,16 @@
 	[listener ignore];
 	
 	[[NSWorkspace sharedWorkspace] openURL: url];
+}
+
+- (void)webView:(WebView *)webView decidePolicyForNewWindowAction:(NSDictionary *)actionInformation request:(NSURLRequest *)request newFrameName:(NSString *)frameName decisionListener:(id <WebPolicyDecisionListener>)listener
+{
+	// Handle target="_blank" links
+	[listener ignore];
+	
+	NSURL *url = [actionInformation objectForKey:WebActionOriginalURLKey];
+	if ( url != nil )
+		[[NSWorkspace sharedWorkspace] openURL:url];
 }
 
 #pragma mark IBAction
@@ -420,14 +442,12 @@
 	if ( self != nil )
 	{
 		if ( bundle == nil )
-		{
 			#if __PROTEIN__
 			bundle = [[ProteinOwner sharedOwner] mainBundle];
 			#else
 			bundle = [NSBundle mainBundle];
 			#endif
-		}
-		
+
 		NSArray *helpManuals = [bundle pathsForResourcesOfType: @"manualFolder" inDirectory: nil];
 		if ( helpManuals != nil && [helpManuals count] > 0 )
 		{
@@ -466,6 +486,21 @@
 	NSString *pagePath = [_helpManualFolderPath stringByAppendingPathComponent: page];
 	
 	[_webView setMainFrameURL: [self URLStringFromFilePath: pagePath]];
+}
+
+@end
+
+
+@implementation PTHelpManualWindowController ( PTHelpManualTester )
+
+- (id) initWithHelpManualFolderPath:(NSString *)path
+{
+	self = [super initWithWindowNibName: @"PTHelpManual"];
+	if ( self != nil )
+	{
+		_helpManualFolderPath = [path copy];
+	}
+	return self;
 }
 
 @end
